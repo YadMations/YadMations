@@ -1,6 +1,6 @@
 /**
  * @name Senpai Plugin
- * @version 0.0.2
+ * @version 0.0.1
  * @source https://raw.githubusercontent.com/YadMations/YadMations/main/BetterDiscord/Plugins/Senpai.plugin.js
  */
 
@@ -14,7 +14,7 @@ const config = {
         "name": "Senpai",
         "type": "Plugin",
         "author": "YadMations",
-        "version": "0.0.2",
+        "version": "0.0.1",
         "description": "Tag ur Senpai with lovely colours <3",
         "source": "https://raw.githubusercontent.com/YadMations/YadMations/main/BetterDiscord/Plugins/Senpai.plugin.js"
     }
@@ -51,7 +51,7 @@ module.exports =
                                         fetch(config.plugin.source)
                                            .then(res => res.text())
                                            .then(text => {
-                                               fs.writeFile(path.join(__dirname + "Senpai.plugin.js"), text, {encoding: 'utf-8'}, (err) => {
+                                               fs.writeFile(__dirname + "/Senpai.plugin.js", text, {encoding: 'utf-8'}, (err) => {
                                                    if(err) return BdApi.showToast("Couldn't update the plugin! Dx", {type: 'error'})
                                                    BdApi.showToast("Plugin Updated Succesfully! OwO", {type: 'success'})
                                                })
