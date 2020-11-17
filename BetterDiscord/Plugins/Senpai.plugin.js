@@ -1,6 +1,6 @@
 /**
  * @name Senpai Plugin
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 const config = {
@@ -8,7 +8,7 @@ const config = {
         "name": "Senpai",
         "type": "Plugin",
         "author": "YadMations",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "description": "Tag ur Senpai with lovely colours <3",
         "source": "https://raw.githubusercontent.com/YadMations/YadMations/main/BetterDiscord/Plugins/Senpai.plugin.js"
     }
