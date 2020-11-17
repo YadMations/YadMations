@@ -1,5 +1,6 @@
 /**
  * @name Senpai Plugin
+ * @version 0.0.1
  */
 
 const config = {
@@ -9,7 +10,7 @@ const config = {
         "author": "YadMations",
         "version": "0.0.1",
         "description": "Tag ur Senpai with lovely colours <3",
-        "source": "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Plugins/GoogleTranslateOption/GoogleTranslateOption.plugin.js"
+        "source": "https://raw.githubusercontent.com/YadMations/YadMations/main/BetterDiscord/Plugins/Senpai.plugin.js"
     }
 };
 module.exports =
@@ -49,6 +50,7 @@ module.exports =
             fetch(config.plugin.source, {method: "GET"}).then((res) => {
                 res.text()
             }).then((text) => {
+                return text;
             })
         }
     }
